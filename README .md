@@ -65,9 +65,10 @@ Once you have the data loaded into your database, connect to your database using
   - authors 
   - log 
   
-1-articles: 
+1-articles:
+&nbsp; 
 | `authors` | `title`  | `slug`   | `lead`   | `body`   | `time`   | `id`     |
-
+&nbsp; 
 >Indexes:
     "articles_pkey" PRIMARY KEY, btree (id)
     "articles_slug_key" UNIQUE CONSTRAINT, btree (slug)
@@ -76,21 +77,18 @@ Foreign-key constraints:
 ***
 
 2-authors:
-| name   | bio    | id     |
-| --- | --- | --- |
-
-| name        | bio          | id  |
-| ------------- |:-------------:| -----:|
-***
+&nbsp; 
+| `name`   | `bio`    | `id`     |
+&nbsp; 
 >Indexes:
     "authors_pkey" PRIMARY KEY, btree (id)
 Referenced by:
     TABLE "articles" CONSTRAINT "articles_author_fkey" FOREIGN KEY (author) REFERENCES authors(id)
 
-3-log: 
-| path         | ip           | method  |status        | time          | id |
-| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:|
-
+3-log:
+&nbsp; 
+| `path ` | `ip` | `method`  |`status`| `time`| `id` |
+&nbsp; 
 >Indexes:
     "log_pkey" PRIMARY KEY, btree (id)
 &nbsp;    
