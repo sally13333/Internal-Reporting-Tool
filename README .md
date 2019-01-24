@@ -67,7 +67,7 @@ Once you have the data loaded into your database, connect to your database using
   
 1-articles:
 | authors        | title           | slug  |lead        | body          | time| id |
-| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:|:-------------:|
+| ------------- |-------------| -----| ------------- |-------------| -----|-------------|
 >Indexes:
     "articles_pkey" PRIMARY KEY, btree (id)
     "articles_slug_key" UNIQUE CONSTRAINT, btree (slug)
