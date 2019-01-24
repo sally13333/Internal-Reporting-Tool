@@ -66,10 +66,6 @@ Once you have the data loaded into your database, connect to your database using
   - log 
   
 1-articles:
-|  | Description |
-| --- | --- |
-
-
 | authors | title  | slug   | lead   | body   | time   | id     |
 | --- | --- | --- | --- | --- | --- | --- |
 >Indexes:
@@ -79,6 +75,9 @@ Foreign-key constraints:
     "articles_author_fkey" FOREIGN KEY (author) REFERENCES authors(id)
 
 2-authors:
+| name   | bio    | id     |
+| --- | --- | --- |
+
 | name        | bio          | id  |
 | ------------- |:-------------:| -----:|
 >Indexes:
