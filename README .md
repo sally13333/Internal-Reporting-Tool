@@ -66,11 +66,8 @@ Once you have the data loaded into your database, connect to your database using
   - log 
   
 1-articles:
-|  authors      |  slug         | lead          | body          | time          | id            |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-
-| title       | slug        |          | body        | time         | id          |
-| ------------- |-------------|-------------| ------------- |-------------| -------------|
+| authors| title | slug  | lead  | body  | time  | id    |
+| --- | --- | --- | --- | --- | --- | --- |
 >Indexes:
     "articles_pkey" PRIMARY KEY, btree (id)
     "articles_slug_key" UNIQUE CONSTRAINT, btree (slug)
@@ -78,16 +75,16 @@ Foreign-key constraints:
     "articles_author_fkey" FOREIGN KEY (author) REFERENCES authors(id)
 
 2-authors:
-| name          | bio         | id          |
-| ------------- |-------------|-------------|
+| name        | bio          | id  |
+| ------------- |:-------------:| -----:|
 >Indexes:
     "authors_pkey" PRIMARY KEY, btree (id)
 Referenced by:
     TABLE "articles" CONSTRAINT "articles_author_fkey" FOREIGN KEY (author) REFERENCES authors(id)
 
 3-log: 
-| path          | ip          | method      |status         | time        | id          |
-| ------------- |-------------|-------------| ------------- |-------------|-------------|
+| path         | ip           | method  |status        | time          | id |
+| ------------- |:-------------:| -----:| ------------- |:-------------:| -----:|
 
 >Indexes:
     "log_pkey" PRIMARY KEY, btree (id)
@@ -243,15 +240,5 @@ vagrant@vagrant:/vagrant/project$ python news.py
    2016-07-17 - 2.26 % errors
 
 ```
-
-
-
-
-
-
-
-
-
-
 
 
