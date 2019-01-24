@@ -73,6 +73,7 @@ Once you have the data loaded into your database, connect to your database using
     "articles_slug_key" UNIQUE CONSTRAINT, btree (slug)
 Foreign-key constraints:
     "articles_author_fkey" FOREIGN KEY (author) REFERENCES authors(id)
+***
 
 2-authors:
 | name   | bio    | id     |
@@ -80,6 +81,7 @@ Foreign-key constraints:
 
 | name        | bio          | id  |
 | ------------- |:-------------:| -----:|
+***
 >Indexes:
     "authors_pkey" PRIMARY KEY, btree (id)
 Referenced by:
