@@ -1,7 +1,3 @@
-| hi            | w             | so            | h             |
-| ------------- | ------------- | ------------- | ------------- |
-
-
 # Full Stack Web Developer Nanodegree Program
 ## First project :Logs Analysis 
 ***
@@ -70,7 +66,10 @@ Once you have the data loaded into your database, connect to your database using
   - log 
   
 1-articles:
-| authors       | title       | slug        |lead           | body        | time         | id          |
+|  authors      |  slug         | lead          | body          | time          | id            |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+
+|      | title       | slug        |          | body        | time         | id          |
 | ------------- |-------------|-------------| ------------- |-------------| -------------|-------------|
 >Indexes:
     "articles_pkey" PRIMARY KEY, btree (id)
